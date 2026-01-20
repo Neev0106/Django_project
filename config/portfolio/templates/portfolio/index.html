@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neev | Django Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <h1>NEEV<span>.</span></h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <h2 class="glow">Hi, I'm Neev</h2>
+    <p>Django Developer | Engineering Student</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Student Management System</h3>
+        <p>Django CRUD + Admin + Auth</p>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Built with Django, HTML, CSS, JS</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: neev@example.com</p>
+</section>
+
+<script src="{% static 'portfolio/script.js' %}"></script>
+</body>
+</html>
